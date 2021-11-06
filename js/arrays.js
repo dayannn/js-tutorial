@@ -1,6 +1,6 @@
 "use strict";
 
-const arr = [1, 2, 3, 6, 8];
+const arr = [10, 2, 33, 6, 8];
 
 console.log(arr.pop());
 console.log(arr);
@@ -27,8 +27,13 @@ arr.forEach((item, idx, arr) => {
     console.log(`${idx}: ${item} in array ${arr}`);
 });
 
-const str = prompt('write a string', '');
+//const str = prompt('write a string', '');
+const str = "a, b, fsdfsf, r";
 const products = str.split(", ");
-products.sort();
+products.sort();    // always sorts as a string by default
 
 console.log(products.join(";; "));
+
+console.log(arr);
+arr.sort((a, b) => a-b);
+console.log(arr);
